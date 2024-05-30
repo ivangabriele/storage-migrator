@@ -1,4 +1,4 @@
-# local-storage-migrator
+# storage-migrator
 
 [![License][img-license]][lnk-license] [![NPM Version][img-npm]][lnk-npm]
 [![Unit Tests][img-unit-tests]][lnk-unit-tests] [![Coverage][img-coverage]][lnk-coverage]
@@ -27,13 +27,13 @@ Manage your Local Storage migrations like you would with a database.
 ### Installation
 
 ```sh
-npm i -E local-storage-migrator
+npm i -E storage-migrator
 ```
 
 ### Migration file
 
 ```ts
-import { type LocalStorageMigration } from 'local-storage-migrator'
+import { type LocalStorageMigration } from 'storage-migrator'
 
 export const MIGRATIONS: LocalStorageMigration[] = [
   {
@@ -84,7 +84,7 @@ export const MIGRATIONS: LocalStorageMigration[] = [
 ### Vanilla JS/TS Initialization
 
 ```ts
-import { LocalStorageMigrator, type LocalStorageMigration } from 'local-storage-migrator'
+import { LocalStorageMigrator, type LocalStorageMigration } from 'storage-migrator'
 
 import { MIGRATIONS } from '...'
 
@@ -96,7 +96,7 @@ localStorageMigrator.run()
 ### React Hook Initialization
 
 ```tsx
-import { useLocalStorageMigrator } from 'local-storage-migrator'
+import { useLocalStorageMigrator } from 'storage-migrator'
 
 import { MIGRATIONS } from '...'
 
@@ -113,13 +113,12 @@ Please read the [contributing document](CONTRIBUTING.md) for setup and contribut
 
 ---
 
-[img-coverage]:
-  https://img.shields.io/codecov/c/github/ivangabriele/local-storage-migrator?flag=unit&style=for-the-badge
-[img-license]: https://img.shields.io/github/license/ivangabriele/local-storage-migrator?style=for-the-badge
-[img-npm]: https://img.shields.io/npm/v/local-storage-migrator?style=for-the-badge
+[img-coverage]: https://img.shields.io/codecov/c/github/ivangabriele/storage-migrator?flag=unit&style=for-the-badge
+[img-license]: https://img.shields.io/github/license/ivangabriele/storage-migrator?style=for-the-badge
+[img-npm]: https://img.shields.io/npm/v/storage-migrator?style=for-the-badge
 [img-unit-tests]:
-  https://img.shields.io/github/actions/workflow/status/ivangabriele/local-storage-migrator/check.yml?branch=main&label=Unit&style=for-the-badge
-[lnk-coverage]: https://app.codecov.io/gh/ivangabriele/local-storage-migrator
-[lnk-license]: https://github.com/ivangabriele/local-storage-migrator/blob/main/LICENSE
-[lnk-npm]: https://www.npmjs.com/package/local-storage-migrator
-[lnk-unit-tests]: https://github.com/ivangabriele/local-storage-migrator/actions?query=branch%3Amain++
+  https://img.shields.io/github/actions/workflow/status/ivangabriele/storage-migrator/check.yml?branch=main&label=Unit&style=for-the-badge
+[lnk-coverage]: https://app.codecov.io/gh/ivangabriele/storage-migrator
+[lnk-license]: https://github.com/ivangabriele/storage-migrator/blob/main/LICENSE
+[lnk-npm]: https://www.npmjs.com/package/storage-migrator
+[lnk-unit-tests]: https://github.com/ivangabriele/storage-migrator/actions?query=branch%3Amain++

@@ -1,5 +1,5 @@
 {
-	"name": "local-storage-migrator",
+	"name": "storage-migrator",
 	"description": "Manage your Local Storage migrations like you would with a database.",
 	"version": "0.0.0",
 	"license": "MIT",
@@ -73,8 +73,8 @@
 		"email": "ivan.gabriele@protonmail.com",
 		"url": "https://www.ivangabriele.com"
 	},
-	"bugs": "https://github.com/ivangabriele/local-storage-migrator/issues",
-	"homepage": "https://github.com/ivangabriele/local-storage-migrator/blob/main/packages/typescript-base/README.md",
+	"bugs": "https://github.com/ivangabriele/storage-migrator/issues",
+	"homepage": "https://github.com/ivangabriele/storage-migrator/blob/main/packages/typescript-base/README.md",
 	"keywords": [
 		"localstorage",
 		"local-storage",
@@ -84,6 +84,6 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ivangabriele/local-storage-migrator.git"
+		"url": "git+https://github.com/ivangabriele/storage-migrator.git"
 	}
 }

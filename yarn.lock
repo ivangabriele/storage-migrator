@@ -6357,43 +6357,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"local-storage-migrator@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "local-storage-migrator@workspace:."
-  dependencies:
-    "@biomejs/biome": "npm:1.7.3"
-    "@commitlint/cli": "npm:19.3.0"
-    "@ivangabriele/commitlint-config": "npm:2.0.3"
-    "@ivangabriele/prettier-config": "npm:5.0.1"
-    "@ivangabriele/semantic-release-config-base": "npm:4.1.5"
-    "@ivangabriele/tsconfig-react": "npm:2.0.0"
-    "@jest/globals": "npm:29.7.0"
-    "@swc/cli": "npm:0.3.12"
-    "@swc/core": "npm:1.5.7"
-    "@swc/jest": "npm:0.2.36"
-    "@testing-library/react": "npm:15.0.7"
-    "@types/eslint__js": "npm:8.42.3"
-    "@types/jest": "npm:29.5.12"
-    "@types/lodash": "npm:^4"
-    "@types/node": "npm:20.12.13"
-    "@types/react": "npm:18.3.3"
-    "@types/react-dom": "npm:18.3.0"
-    husky: "npm:9.0.11"
-    jest: "npm:29.7.0"
-    jest-environment-jsdom: "npm:29.7.0"
-    lint-staged: "npm:15.2.5"
-    lodash: "npm:4.17.21"
-    prettier: "npm:3.2.5"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    semantic-release: "npm:23.1.1"
-    typescript: "npm:5.4.5"
-  dependenciesMeta:
-    react:
-      optional: true
-  languageName: unknown
-  linkType: soft
-
 "locate-path@npm:^2.0.0":
   version: 2.0.0
   resolution: "locate-path@npm:2.0.0"
@@ -8773,6 +8736,43 @@ __metadata:
   checksum: 10c0/651c9f87667e077584bbe848acaecc6049bc71979f1e9a46c7b920cad4431c388df0f51b8ad7cfd6eed3db97a2878d0fc8b3122979439ea8bac29c61c95eec8a
   languageName: node
   linkType: hard
+
+"storage-migrator@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "storage-migrator@workspace:."
+  dependencies:
+    "@biomejs/biome": "npm:1.7.3"
+    "@commitlint/cli": "npm:19.3.0"
+    "@ivangabriele/commitlint-config": "npm:2.0.3"
+    "@ivangabriele/prettier-config": "npm:5.0.1"
+    "@ivangabriele/semantic-release-config-base": "npm:4.1.5"
+    "@ivangabriele/tsconfig-react": "npm:2.0.0"
+    "@jest/globals": "npm:29.7.0"
+    "@swc/cli": "npm:0.3.12"
+    "@swc/core": "npm:1.5.7"
+    "@swc/jest": "npm:0.2.36"
+    "@testing-library/react": "npm:15.0.7"
+    "@types/eslint__js": "npm:8.42.3"
+    "@types/jest": "npm:29.5.12"
+    "@types/lodash": "npm:^4"
+    "@types/node": "npm:20.12.13"
+    "@types/react": "npm:18.3.3"
+    "@types/react-dom": "npm:18.3.0"
+    husky: "npm:9.0.11"
+    jest: "npm:29.7.0"
+    jest-environment-jsdom: "npm:29.7.0"
+    lint-staged: "npm:15.2.5"
+    lodash: "npm:4.17.21"
+    prettier: "npm:3.2.5"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    semantic-release: "npm:23.1.1"
+    typescript: "npm:5.4.5"
+  dependenciesMeta:
+    react:
+      optional: true
+  languageName: unknown
+  linkType: soft
 
 "stream-combiner2@npm:~1.1.1":
   version: 1.1.1
