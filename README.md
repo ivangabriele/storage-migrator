@@ -42,8 +42,8 @@ export const MIGRATIONS: LocalStorageMigration[] = [
       {
         from: 'oldKey',
         to: 'newKey',
-        type: LocalStorageMigrationOperationType.RENAME_KEY,
-      },
+        type: LocalStorageMigrationOperationType.RenameKey,
+      } as RenameKey,
     ],
   },
   {
@@ -51,8 +51,8 @@ export const MIGRATIONS: LocalStorageMigration[] = [
     operations: [
       {
         key: 'deprecatedKey',
-        type: LocalStorageMigrationOperationType.DELETE_KEY,
-      },
+        type: LocalStorageMigrationOperationType.DeleteKey,
+      } as DeleteKey,
     ],
   },
   {
@@ -62,8 +62,8 @@ export const MIGRATIONS: LocalStorageMigration[] = [
         key: 'jsonKey1',
         newJsonKey: 'newJsonKey',
         oldJsonKey: 'oldJsonKey',
-        type: LocalStorageMigrationOperationType.RENAME_JSON_VALUE_PROPERTY_KEY,
-      },
+        type: LocalStorageMigrationOperationType.RenameJsonValuePropertyKey,
+      } as RenameJsonValuePropertyKey,
     ],
   },
   {
@@ -74,8 +74,8 @@ export const MIGRATIONS: LocalStorageMigration[] = [
         key: 'jsonKey2',
         newJsonValue: 'NEW_VALUE',
         oldJsonValue: 'OLD_VALUE',
-        type: LocalStorageMigrationOperationType.UPDATE_JSON_VALUE_PROPERTY_VALUE,
-      },
+        type: LocalStorageMigrationOperationType.UpdateJsonPropertyValue,
+      } as UpdateJsonValuePropertyValue,
     ],
   },
 ]
