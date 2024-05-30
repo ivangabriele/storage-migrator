@@ -1,7 +1,7 @@
 {
 	"name": "local-storage-migrator",
-	"description": "Manage your local storage migrations like you would with a database.",
-	"version": "18.0.2",
+	"description": "Manage your Local Storage migrations like you would with a database.",
+	"version": "0.0.0",
 	"license": "MIT",
 	"type": "module",
 	"engines": {
@@ -54,14 +54,36 @@
 	"optionalDependencies": {
 		"react": "^18.0.0"
 	},
-	"packageManager": "yarn@4.2.2",
 	"lint-staged": {
 		"*.{cjs,cts,d.cts,d.mts,d.ts,js,json,jsonc,jsx,mjs,mts,ts,tson,tsx}": [
 			"biome check --apply --files-ignore-unknown=true --no-errors-on-unmatched"
 		]
 	},
+	"packageManager": "yarn@4.2.2",
 	"prettier": "@ivangabriele/prettier-config",
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
 	"release": {
 		"extends": "@ivangabriele/semantic-release-config-base"
+	},
+	"author": {
+		"name": "Ivan Gabriele",
+		"email": "ivan.gabriele@protonmail.com",
+		"url": "https://www.ivangabriele.com"
+	},
+	"bugs": "https://github.com/ivangabriele/local-storage-migrator/issues",
+	"homepage": "https://github.com/ivangabriele/local-storage-migrator/blob/main/packages/typescript-base/README.md",
+	"keywords": [
+		"localstorage",
+		"local-storage",
+		"migrator",
+		"migration",
+		"migrations"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ivangabriele/local-storage-migrator.git"
 	}
 }
