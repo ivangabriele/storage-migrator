@@ -1,6 +1,6 @@
 {
 	"name": "storage-migrator",
-	"description": "Manage your Local Storage migrations like you would with a database.",
+	"description": "Manage your Local Storage & cookies migrations like you would with a database.",
 	"version": "1.0.0",
 	"license": "MIT",
 	"type": "module",
@@ -15,7 +15,7 @@
 		"clean": "yarn build:clean && rm -Rf ./node_modules/.cache",
 		"prepare": "husky",
 		"test": "yarn test:lint && yarn test:type",
-		"test:lint": "biome check --apply --files-ignore-unknown=true --no-errors-on-unmatched *",
+		"test:lint": "biome check --apply --files-ignore-unknown=true --no-errors-on-unmatched .",
 		"test:type": "tsc",
 		"test:unit": "jest --config=./config/jest.config.js",
 		"test:unit:watch": "yarn test:unit --watch"

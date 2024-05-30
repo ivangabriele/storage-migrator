@@ -1,10 +1,11 @@
 import { beforeEach, describe, expect, it } from "@jest/globals"
-import { LAST_MIGRATION_VERSION_KEY } from "@libs/LocalStorageMigrator/constants"
 
 import {
+	LAST_MIGRATION_VERSION_KEY,
 	type LocalStorageMigration,
-	LocalStorageMigrationOperationType,
 	LocalStorageMigrator,
+	OperationType,
+	StorageType,
 } from "../LocalStorageMigrator"
 
 import type {
@@ -21,7 +22,8 @@ const TEST_MIGRATIONS: LocalStorageMigration[] = [
 			{
 				from: "oldKey",
 				to: "newKey",
-				type: LocalStorageMigrationOperationType.RenameKey,
+				type: OperationType.RenameKey,
+				storageType: StorageType.LocalStorage,
 			} as RenameKey,
 		],
 	},
@@ -30,7 +32,8 @@ const TEST_MIGRATIONS: LocalStorageMigration[] = [
 		operations: [
 			{
 				key: "deprecatedKey",
-				type: LocalStorageMigrationOperationType.DeleteKey,
+				storageType: StorageType.LocalStorage,
+				type: OperationType.DeleteKey,
 			} as DeleteKey,
 		],
 	},
@@ -41,7 +44,8 @@ const TEST_MIGRATIONS: LocalStorageMigration[] = [
 				key: "jsonKey1",
 				newJsonKey: "newJsonKey",
 				oldJsonKey: "oldJsonKey",
-				type: LocalStorageMigrationOperationType.RenameJsonValuePropertyKey,
+				storageType: StorageType.LocalStorage,
+				type: OperationType.RenameJsonValuePropertyKey,
 			} as RenameJsonValuePropertyKey,
 		],
 	},
@@ -53,7 +57,8 @@ const TEST_MIGRATIONS: LocalStorageMigration[] = [
 				key: "jsonKey2",
 				newJsonValue: "NEW_VALUE",
 				oldJsonValue: "OLD_VALUE",
-				type: LocalStorageMigrationOperationType.UpdateJsonPropertyValue,
+				storageType: StorageType.LocalStorage,
+				type: OperationType.UpdateJsonPropertyValue,
 			} as UpdateJsonValuePropertyValue,
 		],
 	},
@@ -144,7 +149,6 @@ describe("libs/LocalStorageMigrator", () => {
 			description: "Invalid operation type",
 			operations: [
 				{
-					key: "invalidKey",
 					// @ts-expect-error Invalid operation type.
 					type: "INVALID_TYPE",
 				},

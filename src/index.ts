@@ -3,7 +3,8 @@ export { useLocalStorageMigrator } from "./hooks/useLocalStorageMigrator"
 
 export {
 	LocalStorageMigrator,
-	LocalStorageMigrationOperationType,
+	OperationType,
+	LAST_MIGRATION_VERSION_KEY,
 	type LocalStorageMigration,
-	type LocalStorageMigrationOperation,
+	type Operation,
 } from "./libs/LocalStorageMigrator"

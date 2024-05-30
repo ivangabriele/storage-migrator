@@ -1,11 +1,11 @@
-import type { LocalStorageMigrationOperationType } from "./constants"
+import type { OperationType, StorageType } from "./constants"
 
 export type LocalStorageMigration = {
 	description: string
-	operations: LocalStorageMigrationOperation[]
+	operations: Operation[]
 }
 
-export type LocalStorageMigrationOperation =
+export type Operation =
 	| DeleteKey
 	| RenameKey
 	| RenameJsonValuePropertyKey
@@ -13,20 +13,23 @@ export type LocalStorageMigrationOperation =
 
 export type DeleteKey = {
 	key: string
-	type: LocalStorageMigrationOperationType.DeleteKey
+	type: OperationType.DeleteKey
+	storageType: StorageType
 }
 
 export type RenameKey = {
 	from: string
 	to: string
-	type: LocalStorageMigrationOperationType.RenameKey
+	storageType: StorageType
+	type: OperationType.RenameKey
 }
 
 export type RenameJsonValuePropertyKey = {
 	key: string
 	newJsonKey: string
 	oldJsonKey: string
-	type: LocalStorageMigrationOperationType.RenameJsonValuePropertyKey
+	storageType: StorageType
+	type: OperationType.RenameJsonValuePropertyKey
 }
 
 export type UpdateJsonValuePropertyValue = {
@@ -34,5 +37,6 @@ export type UpdateJsonValuePropertyValue = {
 	key: string
 	newJsonValue: string | number | boolean | null
 	oldJsonValue: string | number | boolean | null
-	type: LocalStorageMigrationOperationType.UpdateJsonPropertyValue
+	storageType: StorageType
+	type: OperationType.UpdateJsonPropertyValue
 }

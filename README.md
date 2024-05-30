@@ -3,7 +3,7 @@
 [![License][img-license]][lnk-license] [![NPM Version][img-npm]][lnk-npm]
 [![Unit Tests][img-unit-tests]][lnk-unit-tests] [![Coverage][img-coverage]][lnk-coverage]
 
-Manage your Local Storage migrations like you would with a database.
+Manage your Local Storage & cookies migrations like you would with a database.
 
 ---
 
@@ -21,6 +21,8 @@ Manage your Local Storage migrations like you would with a database.
 
 - [x] JS library
 - [x] React hook
+- [ ] Cookies
+- [x] LocalStorage
 
 ## Usage
 

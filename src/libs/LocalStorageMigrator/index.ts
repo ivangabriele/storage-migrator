@@ -1,10 +1,7 @@
 import { assertNotNullish } from "@utils/assertNotNullish"
 import { isPlainObject, omit } from "lodash/fp"
 
-import {
-	LAST_MIGRATION_VERSION_KEY,
-	LocalStorageMigrationOperationType,
-} from "./constants"
+import { LAST_MIGRATION_VERSION_KEY, OperationType } from "./constants"
 
 import type { AnyObject } from "@typings"
 import type {
@@ -58,22 +55,22 @@ export class LocalStorageMigrator {
 	#applyMigration(migration: LocalStorageMigration): void {
 		for (const operation of migration.operations) {
 			switch (operation.type) {
-				case LocalStorageMigrationOperationType.RenameKey: {
+				case OperationType.RenameKey: {
 					this.#renameLocalStorageKey(operation.from, operation.to)
 					break
 				}
 
-				case LocalStorageMigrationOperationType.DeleteKey: {
+				case OperationType.DeleteKey: {
 					this.#deleteLocalStorageKey(operation.key)
 					break
 				}
 
-				case LocalStorageMigrationOperationType.UpdateJsonPropertyValue: {
+				case OperationType.UpdateJsonPropertyValue: {
 					this.#updateLocalStorageJsonValuePropertyValue(operation)
 					break
 				}
 
-				case LocalStorageMigrationOperationType.RenameJsonValuePropertyKey: {
+				case OperationType.RenameJsonValuePropertyKey: {
 					this.#updateLocalStorageJsonValuePropertyKey(operation)
 					break
 				}
@@ -188,9 +185,14 @@ export class LocalStorageMigrator {
 	}
 }
 
-export { LocalStorageMigrationOperationType }
+// biome-ignore lint/performance/noBarrelFile: <explanation>
+export {
+	LAST_MIGRATION_VERSION_KEY,
+	OperationType,
+	StorageType,
+} from "./constants"
 
 export type {
 	LocalStorageMigration,
-	LocalStorageMigrationOperation,
+	Operation,
 } from "./types"
