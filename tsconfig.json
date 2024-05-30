@@ -1,0 +1,20 @@
+{
+	"extends": "@ivangabriele/tsconfig-react",
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"paths": {
+			"@hooks/*": ["hooks/*"],
+			"@libs/*": ["libs/*"],
+			"@typings": ["typings.ts"],
+			"@utils/*": ["utils/*"]
+		}
+	},
+	"include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+	"exclude": [
+		"config/*",
+		"coverage/*",
+		"dist/*",
+		"node_modules/*",
+		"eslint.config.js"
+	]
+}

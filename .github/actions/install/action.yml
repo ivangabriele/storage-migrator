@@ -1,0 +1,47 @@
+# https://github.com/actions/setup-node/issues/325
+name: Install
+description: 'Run Yarn install with node_modules linker and cache enabled'
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: Setup Node.js Corepack
+      shell: bash
+      run: corepack enable
+
+    - name: Set environment variables
+      shell: bash
+      env:
+        YARN_ENABLE_GLOBAL_CACHE: 'false'
+      run: |
+        echo "CACHE_FOLDER=$(yarn config get cacheFolder)" >> $GITHUB_ENV
+        echo "CURRENT_NODE_VERSION="node-$(node --version)"" >> $GITHUB_ENV
+        echo "NPM_GLOBAL_CACHE_FOLDER=$(npm config get cache)" >> $GITHUB_ENV
+
+    - name: Restore Yarn cache
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.CACHE_FOLDER }}
+        key: yarn-cache-${{ hashFiles('yarn.lock', '.yarnrc.yml') }}
+        restore-keys: yarn-cache-
+
+    - name: Restore global NPM cache folder
+      id: npm-global-cache
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.NPM_GLOBAL_CACHE_FOLDER }}
+        key:
+          npm-global-cache-${{ runner.os }}-${{ env.CURRENT_NODE_VERSION }}-${{ hashFiles('yarn.lock', '.yarnrc.yml') }}
+
+    - name: Install dependencies
+      shell: bash
+      run: yarn install --immutable --inline-builds
+      env:
+        # Overrides/align yarnrc.yml options (v3, v4) for a CI context
+        YARN_ENABLE_GLOBAL_CACHE: 'false' # Use local cache folder to keep downloaded archives
+        YARN_ENABLE_MIRROR: 'false' # Prevent populating global cache for caches misses (local cache only)
+        YARN_NM_MODE: 'hardlinks-local' # Reduce node_modules size
+        YARN_INSTALL_STATE_PATH: '.yarn/ci-cache/install-state.gz' # Might speed up resolution step when node_modules present
+        # Other environment variables
+        HUSKY: '0' # By default do not run HUSKY install
