@@ -113,12 +113,13 @@ Please read the [contributing document](CONTRIBUTING.md) for setup and contribut
 
 ---
 
-[img-coverage]: https://img.shields.io/codecov/c/github/ivangabriele/local-store-migrator?flag=unit&style=for-the-badge
-[img-license]: https://img.shields.io/github/license/ivangabriele/local-store-migrator?style=for-the-badge
-[img-npm]: https://img.shields.io/npm/v/local-store-migrator?style=for-the-badge
+[img-coverage]:
+  https://img.shields.io/codecov/c/github/ivangabriele/local-storage-migrator?flag=unit&style=for-the-badge
+[img-license]: https://img.shields.io/github/license/ivangabriele/local-storage-migrator?style=for-the-badge
+[img-npm]: https://img.shields.io/npm/v/local-storage-migrator?style=for-the-badge
 [img-unit-tests]:
-  https://img.shields.io/github/actions/workflow/status/ivangabriele/local-store-migrator/check.yml?branch=main&label=Unit&style=for-the-badge
-[lnk-coverage]: https://app.codecov.io/gh/ivangabriele/local-store-migrator
-[lnk-license]: https://github.com/ivangabriele/local-store-migrator/blob/main/LICENSE
-[lnk-npm]: https://www.npmjs.com/package/local-store-migrator
-[lnk-unit-tests]: https://github.com/ivangabriele/local-store-migrator/actions?query=branch%3Amain++
+  https://img.shields.io/github/actions/workflow/status/ivangabriele/local-storage-migrator/check.yml?branch=main&label=Unit&style=for-the-badge
+[lnk-coverage]: https://app.codecov.io/gh/ivangabriele/local-storage-migrator
+[lnk-license]: https://github.com/ivangabriele/local-storage-migrator/blob/main/LICENSE
+[lnk-npm]: https://www.npmjs.com/package/local-storage-migrator
+[lnk-unit-tests]: https://github.com/ivangabriele/local-storage-migrator/actions?query=branch%3Amain++
