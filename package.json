@@ -1,7 +1,7 @@
 {
 	"name": "storage-migrator",
 	"description": "Manage your Local Storage migrations like you would with a database.",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"license": "MIT",
 	"type": "module",
 	"engines": {
