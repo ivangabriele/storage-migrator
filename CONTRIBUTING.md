@@ -8,10 +8,6 @@
 - [Release](#release)
   - [Versionning](#versionning)
     - [Breaking changes](#breaking-changes)
-- [Maintenance](#maintenance)
-  - [Updating icons](#updating-icons)
-  - [Updating caniuse browserlist](#updating-caniuse-browserlist)
-- [Notes](#notes)
 
 ## Getting Started: Backend & Frontend
 
@@ -29,8 +25,6 @@ yarn prepare # Install Git hooks
 ```
 
 ### Run Unit Tests
-
-You must have the Storybook running locally to run the E2E tests (`yarn dev`). You can then run the E2E tests with:
 
 ```sh
 yarn test:unit
@@ -80,41 +74,3 @@ git commit -m "feat!: all theses component props are now strings instead of numb
 ```
 
 And **don't forget** the `BREAKING CHANGE: ...` in the commit message body.
-
-## Maintenance
-
-### Updating icons
-
-1. Copy the new SVG icons in `src/assets/icons` folder
-2. Run
-
-```sh
-yarn icons
-```
-
-to generate React components from the SVG icons.
-
-### Updating caniuse browserlist
-
-We
-[should regularly update `browserlist` database](https://github.com/browserslist/browserslist#browsers-data-updating):
-
-```sh
-npx browserslist@latest --update-db
-```
-
-## Notes
-
-We added `@babel/runtime` in `package.json` dependencies to fix this error:
-
-```
-@rsuite/icons tried to access @babel/runtime, but it isn't declared in its dependencies;
-this makes the require call ambiguous and unsound.
-```
-
-We added `prop-types` in `package.json` dependencies to fix this error:
-
-```
-ModuleNotFoundError: Module not found: Error:
-Can't resolve 'prop-types' in '.../monitor-ui/.yarn/__virtual__/.../@rsuite/icons/lib'
-```

@@ -8,13 +8,6 @@ import {
 	StorageType,
 } from "../LocalStorageMigrator"
 
-import type {
-	DeleteKey,
-	RenameJsonValuePropertyKey,
-	RenameKey,
-	UpdateJsonValuePropertyValue,
-} from "@libs/LocalStorageMigrator/types"
-
 const TEST_MIGRATIONS: LocalStorageMigration[] = [
 	{
 		description: 'Rename "oldKey" to "newKey"',
@@ -24,7 +17,7 @@ const TEST_MIGRATIONS: LocalStorageMigration[] = [
 				to: "newKey",
 				type: OperationType.RenameKey,
 				storageType: StorageType.LocalStorage,
-			} as RenameKey,
+			},
 		],
 	},
 	{
@@ -34,7 +27,7 @@ const TEST_MIGRATIONS: LocalStorageMigration[] = [
 				key: "deprecatedKey",
 				storageType: StorageType.LocalStorage,
 				type: OperationType.DeleteKey,
-			} as DeleteKey,
+			},
 		],
 	},
 	{
@@ -46,7 +39,7 @@ const TEST_MIGRATIONS: LocalStorageMigration[] = [
 				oldJsonKey: "oldJsonKey",
 				storageType: StorageType.LocalStorage,
 				type: OperationType.RenameJsonValuePropertyKey,
-			} as RenameJsonValuePropertyKey,
+			},
 		],
 	},
 	{
@@ -59,7 +52,7 @@ const TEST_MIGRATIONS: LocalStorageMigration[] = [
 				oldJsonValue: "OLD_VALUE",
 				storageType: StorageType.LocalStorage,
 				type: OperationType.UpdateJsonPropertyValue,
-			} as UpdateJsonValuePropertyValue,
+			},
 		],
 	},
 ]
