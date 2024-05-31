@@ -1,7 +1,7 @@
 {
 	"name": "storage-migrator",
 	"description": "Manage your Local Storage & cookies migrations like you would with a database.",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"license": "MIT",
 	"type": "module",
 	"engines": {

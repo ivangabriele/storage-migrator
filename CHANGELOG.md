@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/ivangabriele/storage-migrator/compare/v2.0.0...v2.0.1) (2024-05-31)
+
+
+### Documentation
+
+* **readme:** replace tabs by spaces in example ([c3a9543](https://github.com/ivangabriele/storage-migrator/commit/c3a954376d874e63ef5a32fee84d8ad660af048b))
+* **readme:** update example following breaking changeg ([13db617](https://github.com/ivangabriele/storage-migrator/commit/13db6178b08c07f4108b4f9220e1b38a4622871e))
+
 ## [2.0.0](https://github.com/ivangabriele/storage-migrator/compare/v1.0.0...v2.0.0) (2024-05-31)
 
 
