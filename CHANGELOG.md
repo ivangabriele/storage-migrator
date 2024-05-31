@@ -1,3 +1,15 @@
+## [2.0.0](https://github.com/ivangabriele/storage-migrator/compare/v1.0.0...v2.0.0) (2024-05-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* - Add `storageType` to all operations
+- Many types are renamed
+
+### Bug Fixes
+
+* add missing storage type to prepare for cookies management ([c08ee28](https://github.com/ivangabriele/storage-migrator/commit/c08ee28d6d3fbb701eda05345de6599c0a6df166))
+
 ## 1.0.0 (2024-05-30)
 
 
