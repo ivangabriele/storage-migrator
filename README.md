@@ -38,51 +38,52 @@ npm i -E storage-migrator
 import { type LocalStorageMigration, OperationType, StorageType } from 'storage-migrator'
 
 export const MIGRATIONS: LocalStorageMigration[] = [
-	{
-		description: 'Rename "oldKey" to "newKey"',
-		operations: [
-			{
-				from: "oldKey",
-				to: "newKey",
-				type: OperationType.RenameKey,
-				storageType: StorageType.LocalStorage,
-			},
-		],
-	},
-	{
-		description: 'Delete "deprecatedKey"',
-		operations: [
-			{
-				key: "deprecatedKey",
-				storageType: StorageType.LocalStorage,
-				type: OperationType.DeleteKey,
-			},
-		],
-	},
-	{
-		description: 'Rename JSON property key "oldJsonKey" to "newJsonKey"',
-		operations: [
-			{
-				key: "jsonKey1",
-				newJsonKey: "newJsonKey",
-				oldJsonKey: "oldJsonKey",
-				storageType: StorageType.LocalStorage,
-				type: OperationType.RenameJsonValuePropertyKey,
-			},
-		],
-	},
-	{
-		description: "Update JSON property value from `OLD_VALUE` to `NEW_VALUE`",
-		operations: [
-			{
-				jsonKey: "key",
-				key: "jsonKey2",
-				newJsonValue: "NEW_VALUE",
-				oldJsonValue: "OLD_VALUE",
-				storageType: StorageType.LocalStorage,
-				type: OperationType.UpdateJsonPropertyValue,
-			},
-		],
+  {
+    description: 'Rename "oldKey" to "newKey"',
+    operations: [
+      {
+        from: 'oldKey',
+        to: 'newKey',
+        type: OperationType.RenameKey,
+        storageType: StorageType.LocalStorage,
+      },
+    ],
+  },
+  {
+    description: 'Delete "deprecatedKey"',
+    operations: [
+      {
+        key: 'deprecatedKey',
+        storageType: StorageType.LocalStorage,
+        type: OperationType.DeleteKey,
+      },
+    ],
+  },
+  {
+    description: 'Rename JSON property key "oldJsonKey" to "newJsonKey"',
+    operations: [
+      {
+        key: 'jsonKey1',
+        newJsonKey: 'newJsonKey',
+        oldJsonKey: 'oldJsonKey',
+        storageType: StorageType.LocalStorage,
+        type: OperationType.RenameJsonValuePropertyKey,
+      },
+    ],
+  },
+  {
+    description: 'Update JSON property value from `OLD_VALUE` to `NEW_VALUE`',
+    operations: [
+      {
+        jsonKey: 'key',
+        key: 'jsonKey2',
+        newJsonValue: 'NEW_VALUE',
+        oldJsonValue: 'OLD_VALUE',
+        storageType: StorageType.LocalStorage,
+        type: OperationType.UpdateJsonPropertyValue,
+      },
+    ],
+  },
 ]
 ```
 
