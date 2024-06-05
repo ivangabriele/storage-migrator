@@ -417,18 +417,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@biomejs/biome@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/biome@npm:1.7.3"
+"@biomejs/biome@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/biome@npm:1.8.0"
   dependencies:
-    "@biomejs/cli-darwin-arm64": "npm:1.7.3"
-    "@biomejs/cli-darwin-x64": "npm:1.7.3"
-    "@biomejs/cli-linux-arm64": "npm:1.7.3"
-    "@biomejs/cli-linux-arm64-musl": "npm:1.7.3"
-    "@biomejs/cli-linux-x64": "npm:1.7.3"
-    "@biomejs/cli-linux-x64-musl": "npm:1.7.3"
-    "@biomejs/cli-win32-arm64": "npm:1.7.3"
-    "@biomejs/cli-win32-x64": "npm:1.7.3"
+    "@biomejs/cli-darwin-arm64": "npm:1.8.0"
+    "@biomejs/cli-darwin-x64": "npm:1.8.0"
+    "@biomejs/cli-linux-arm64": "npm:1.8.0"
+    "@biomejs/cli-linux-arm64-musl": "npm:1.8.0"
+    "@biomejs/cli-linux-x64": "npm:1.8.0"
+    "@biomejs/cli-linux-x64-musl": "npm:1.8.0"
+    "@biomejs/cli-win32-arm64": "npm:1.8.0"
+    "@biomejs/cli-win32-x64": "npm:1.8.0"
   dependenciesMeta:
     "@biomejs/cli-darwin-arm64":
       optional: true
@@ -448,62 +448,62 @@ __metadata:
       optional: true
   bin:
     biome: bin/biome
-  checksum: 10c0/05c95bb4b1fbf1b252cf2124f012f69a00ff5599ecac002b7e3004bfcd927e3d7b5f4935739096b5184653ec96b44ddcc36809d059682e5378bde20c836fb111
+  checksum: 10c0/0def7e1bef485cb60038d724dd3c11b9e6aaf2aa91593b76ab73f0d52ed319c56831fb5e7fa5a3618ee719b98a55198c88f2cabd8b32c7e17fac9b86f427a95b
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-arm64@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/cli-darwin-arm64@npm:1.7.3"
+"@biomejs/cli-darwin-arm64@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/cli-darwin-arm64@npm:1.8.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-x64@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/cli-darwin-x64@npm:1.7.3"
+"@biomejs/cli-darwin-x64@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/cli-darwin-x64@npm:1.8.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-arm64-musl@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/cli-linux-arm64-musl@npm:1.7.3"
+"@biomejs/cli-linux-arm64-musl@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/cli-linux-arm64-musl@npm:1.8.0"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-arm64@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/cli-linux-arm64@npm:1.7.3"
+"@biomejs/cli-linux-arm64@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/cli-linux-arm64@npm:1.8.0"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-x64-musl@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/cli-linux-x64-musl@npm:1.7.3"
+"@biomejs/cli-linux-x64-musl@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/cli-linux-x64-musl@npm:1.8.0"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-x64@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/cli-linux-x64@npm:1.7.3"
+"@biomejs/cli-linux-x64@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/cli-linux-x64@npm:1.8.0"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-arm64@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/cli-win32-arm64@npm:1.7.3"
+"@biomejs/cli-win32-arm64@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/cli-win32-arm64@npm:1.8.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-x64@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@biomejs/cli-win32-x64@npm:1.7.3"
+"@biomejs/cli-win32-x64@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@biomejs/cli-win32-x64@npm:1.8.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1950,94 +1950,94 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-darwin-arm64@npm:1.5.7"
+"@swc/core-darwin-arm64@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-darwin-arm64@npm:1.5.25"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-darwin-x64@npm:1.5.7"
+"@swc/core-darwin-x64@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-darwin-x64@npm:1.5.25"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.5.7"
+"@swc/core-linux-arm-gnueabihf@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.5.25"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.5.7"
+"@swc/core-linux-arm64-gnu@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.5.25"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-linux-arm64-musl@npm:1.5.7"
+"@swc/core-linux-arm64-musl@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-linux-arm64-musl@npm:1.5.25"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-linux-x64-gnu@npm:1.5.7"
+"@swc/core-linux-x64-gnu@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-linux-x64-gnu@npm:1.5.25"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-linux-x64-musl@npm:1.5.7"
+"@swc/core-linux-x64-musl@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-linux-x64-musl@npm:1.5.25"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.5.7"
+"@swc/core-win32-arm64-msvc@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.5.25"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.5.7"
+"@swc/core-win32-ia32-msvc@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.5.25"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core-win32-x64-msvc@npm:1.5.7"
+"@swc/core-win32-x64-msvc@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core-win32-x64-msvc@npm:1.5.25"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:1.5.7":
-  version: 1.5.7
-  resolution: "@swc/core@npm:1.5.7"
+"@swc/core@npm:1.5.25":
+  version: 1.5.25
+  resolution: "@swc/core@npm:1.5.25"
   dependencies:
-    "@swc/core-darwin-arm64": "npm:1.5.7"
-    "@swc/core-darwin-x64": "npm:1.5.7"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.5.7"
-    "@swc/core-linux-arm64-gnu": "npm:1.5.7"
-    "@swc/core-linux-arm64-musl": "npm:1.5.7"
-    "@swc/core-linux-x64-gnu": "npm:1.5.7"
-    "@swc/core-linux-x64-musl": "npm:1.5.7"
-    "@swc/core-win32-arm64-msvc": "npm:1.5.7"
-    "@swc/core-win32-ia32-msvc": "npm:1.5.7"
-    "@swc/core-win32-x64-msvc": "npm:1.5.7"
-    "@swc/counter": "npm:^0.1.2"
-    "@swc/types": "npm:0.1.7"
+    "@swc/core-darwin-arm64": "npm:1.5.25"
+    "@swc/core-darwin-x64": "npm:1.5.25"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.5.25"
+    "@swc/core-linux-arm64-gnu": "npm:1.5.25"
+    "@swc/core-linux-arm64-musl": "npm:1.5.25"
+    "@swc/core-linux-x64-gnu": "npm:1.5.25"
+    "@swc/core-linux-x64-musl": "npm:1.5.25"
+    "@swc/core-win32-arm64-msvc": "npm:1.5.25"
+    "@swc/core-win32-ia32-msvc": "npm:1.5.25"
+    "@swc/core-win32-x64-msvc": "npm:1.5.25"
+    "@swc/counter": "npm:^0.1.3"
+    "@swc/types": "npm:^0.1.7"
   peerDependencies:
-    "@swc/helpers": ^0.5.0
+    "@swc/helpers": "*"
   dependenciesMeta:
     "@swc/core-darwin-arm64":
       optional: true
@@ -2062,11 +2062,11 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 10c0/83ab96bee5d448e580d8a6c8c1d1fbfdfaf5561f8904140122e49c428c2336790d31e7bdcdf610ce8f20c7f682785263d2ebab7cb56c2dcb5ea46be54eab2c03
+  checksum: 10c0/f3e39db08e9145a2e4fdaa5f6dbb51609688586da504aa53027ec06001fd44bb0c372e262f17039cb799b022bd75249328740b46bb56ff9f4be579fd921cbf94
   languageName: node
   linkType: hard
 
-"@swc/counter@npm:^0.1.2, @swc/counter@npm:^0.1.3":
+"@swc/counter@npm:^0.1.3":
   version: 0.1.3
   resolution: "@swc/counter@npm:0.1.3"
   checksum: 10c0/8424f60f6bf8694cfd2a9bca45845bce29f26105cda8cf19cdb9fd3e78dc6338699e4db77a89ae449260bafa1cc6bec307e81e7fb96dbf7dcfce0eea55151356
@@ -2086,7 +2086,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/types@npm:0.1.7":
+"@swc/types@npm:^0.1.7":
   version: 0.1.7
   resolution: "@swc/types@npm:0.1.7"
   dependencies:
@@ -2349,12 +2349,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.12.13":
+"@types/node@npm:*":
   version: 20.12.13
   resolution: "@types/node@npm:20.12.13"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 10c0/2ac92bb631dbddfb560eb3ba4eedbb1c688044a0130bc1ef032f5c0f20148ac7c9aa3c5aaa5a9787b6c4c6299847d754b96ee8c9def951481ba6628c46b683f5
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.14.2":
+  version: 20.14.2
+  resolution: "@types/node@npm:20.14.2"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/2d86e5f2227aaa42212e82ea0affe72799111b888ff900916376450b02b09b963ca888b20d9c332d8d2b833ed4781987867a38eaa2e4863fa8439071468b0a6f
   languageName: node
   linkType: hard
 
@@ -7727,12 +7736,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.2.5":
-  version: 3.2.5
-  resolution: "prettier@npm:3.2.5"
+"prettier@npm:3.3.1":
+  version: 3.3.1
+  resolution: "prettier@npm:3.3.1"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/ea327f37a7d46f2324a34ad35292af2ad4c4c3c3355da07313339d7e554320f66f65f91e856add8530157a733c6c4a897dc41b577056be5c24c40f739f5ee8c6
+  checksum: 10c0/c25a709c9f0be670dc6bcb190b622347e1dbeb6c3e7df8b0711724cb64d8647c60b839937a4df4df18e9cfb556c2b08ca9d24d9645eb5488a7fc032a2c4d5cb3
   languageName: node
   linkType: hard
 
@@ -8741,7 +8750,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "storage-migrator@workspace:."
   dependencies:
-    "@biomejs/biome": "npm:1.7.3"
+    "@biomejs/biome": "npm:1.8.0"
     "@commitlint/cli": "npm:19.3.0"
     "@ivangabriele/commitlint-config": "npm:2.0.3"
     "@ivangabriele/prettier-config": "npm:5.0.1"
@@ -8749,13 +8758,13 @@ __metadata:
     "@ivangabriele/tsconfig-react": "npm:2.0.0"
     "@jest/globals": "npm:29.7.0"
     "@swc/cli": "npm:0.3.12"
-    "@swc/core": "npm:1.5.7"
+    "@swc/core": "npm:1.5.25"
     "@swc/jest": "npm:0.2.36"
     "@testing-library/react": "npm:15.0.7"
     "@types/eslint__js": "npm:8.42.3"
     "@types/jest": "npm:29.5.12"
     "@types/lodash": "npm:^4"
-    "@types/node": "npm:20.12.13"
+    "@types/node": "npm:20.14.2"
     "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
     husky: "npm:9.0.11"
@@ -8763,7 +8772,7 @@ __metadata:
     jest-environment-jsdom: "npm:29.7.0"
     lint-staged: "npm:15.2.5"
     lodash: "npm:4.17.21"
-    prettier: "npm:3.2.5"
+    prettier: "npm:3.3.1"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
     semantic-release: "npm:23.1.1"
