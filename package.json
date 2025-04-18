@@ -39,20 +39,20 @@
 		"@types/jest": "29.5.14",
 		"@types/lodash": "^4",
 		"@types/node": "22.14.1",
-		"@types/react": "18.3.20",
-		"@types/react-dom": "18.3.6",
+		"@types/react": "19.1.2",
+		"@types/react-dom": "19.1.2",
 		"husky": "9.1.7",
 		"jest": "29.7.0",
 		"jest-environment-jsdom": "29.7.0",
 		"lint-staged": "15.5.1",
 		"prettier": "3.5.3",
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
 		"semantic-release": "24.2.3",
 		"typescript": "5.8.3"
 	},
 	"optionalDependencies": {
-		"react": "^18.0.0"
+		"react": "^19.0.0"
 	},
 	"lint-staged": {
 		"*.{cjs,cts,d.cts,d.mts,d.ts,js,json,jsonc,jsx,mjs,mts,ts,tson,tsx}": [
