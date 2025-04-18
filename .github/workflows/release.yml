@@ -34,7 +34,7 @@ jobs:
       - name: Get new version
         run: echo "NEW_VERSION=$(npm pkg get version | sed 's/"//g')" >> "$GITHUB_ENV"
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           branch: ci-release-v${{ env.NEW_VERSION }}
           commit-message: 'ci(release): v${{ env.NEW_VERSION }}'
