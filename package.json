@@ -38,7 +38,7 @@
 		"@types/eslint__js": "8.42.3",
 		"@types/jest": "29.5.14",
 		"@types/lodash": "^4",
-		"@types/node": "20.17.30",
+		"@types/node": "22.14.1",
 		"@types/react": "18.3.20",
 		"@types/react-dom": "18.3.6",
 		"husky": "9.1.7",
