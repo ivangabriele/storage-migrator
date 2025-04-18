@@ -51,7 +51,7 @@ jobs:
       - name: Test
         run: yarn test:unit --coverage
       - name: Upload coverage
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           flags: unit
           token: ${{ secrets.CODECOV_TOKEN }}
